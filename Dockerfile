@@ -5,7 +5,7 @@ RUN apt-get update && apt-get install -y \
     python3-pip \
     git
 
-RUN apt-get install python-yaml
+RUN apt-get install python3-yaml -y
 
 COPY feed.py /usr/bin/feed.py
 
